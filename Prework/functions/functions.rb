@@ -34,4 +34,33 @@ class FunctionClass
   taste "spinach"
   taste "bacon"
 
+  def self.square(number)
+    number * number
+  end
+
+  square(4)
+
+  def self.multiply(a, b)
+    a * b
+  end
+
+  puts multiply(4, 2)
+
+  def self.add(a, b)
+    calc1 = a + b
+    calc2 = a + b
+    calc3 = a + b
+    return calc1, calc2, calc3
+  end
+
+  puts add(2, 4)
+
+  def square(num)
+    sqr_num = num * num
+    if sqr_num > 100
+      return "Number too big!!"
+    end
+    sqr_num
+  end
+
 end
